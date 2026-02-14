@@ -195,7 +195,12 @@ Us❤️
 
 /* ---------------- STYLES ---------------- */
 
-const main={minHeight:"100vh",background:"linear-gradient(135deg,#ffd6ea,#ff9ecb,#ff6fa8)",overflowX:"hidden",color:"#fff"};
+const main = {
+  minHeight: "100vh",
+  background: "linear-gradient(135deg,#ffd6ea,#ff9ecb,#ff6fa8)",
+  overflowX: "hidden" as const,
+  color: "#fff"
+};
 const hero={minHeight:"90vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center",color:"#fff"};
 const heroTitle={fontSize:"4rem",fontWeight:800,color:"#fff"};
 const heroSub={fontSize:"1.3rem",marginBottom:40,color:"#fff"};
@@ -211,4 +216,5 @@ const videoCard={width:300,borderRadius:20};
 function float(w:number){
 return{position:"absolute" as const,width:w,borderRadius:14,boxShadow:"0 10px 30px rgba(0,0,0,.25)"};
 }
+
 
