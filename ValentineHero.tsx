@@ -22,7 +22,7 @@ const root = useRef<HTMLDivElement>(null);
 const container = useRef<HTMLDivElement>(null);
 const mouse = useRef({x:0,y:0});
 const particles = useRef<Particle[]>([]);
-const raf = useRef<number>();
+const raf = useRef<number | null>(null);
 const audioRef = useRef<HTMLAudioElement>(null);
 const [mounted,setMounted]=useState(false);
 
@@ -211,3 +211,4 @@ const videoCard={width:300,borderRadius:20};
 function float(w:number){
 return{position:"absolute" as const,width:w,borderRadius:14,boxShadow:"0 10px 30px rgba(0,0,0,.25)"};
 }
+
